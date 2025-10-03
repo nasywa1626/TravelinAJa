@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Travel Open Trip</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background: #ffe6f0; color: #333; }
+    header { background: #ff4da6; color: white; text-align: center; padding: 30px; }
+    nav { background: #ff80bf; text-align: center; padding: 10px; }
+    nav a { color: white; margin: 0 15px; text-decoration: none; font-weight: bold; }
+    nav a:hover { text-decoration: underline; }
+    section { padding: 40px; text-align: center; }
+    .gallery { display: flex; justify-content: center; flex-wrap: wrap; gap: 20px; }
+    .gallery img { width: 250px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .testimoni { background: white; margin: 20px auto; padding: 20px; max-width: 600px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .trip-container { display: flex; flex-wrap: wrap; justify-content: center; gap: 20px; }
+    .trip { background: white; padding: 20px; border-radius: 12px; width: 280px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    .trip img { width: 100%; border-radius: 12px; margin-bottom: 10px; }
+    form { max-width: 500px; margin: auto; background: white; padding: 20px; border-radius: 12px; box-shadow: 0 4px 8px rgba(0,0,0,0.1); }
+    form input, form select { width: 100%; padding: 10px; margin: 10px 0; border: 1px solid #ddd; border-radius: 8px; }
+    form button { background: #ff4da6; color: white; padding: 12px; border: none; border-radius: 8px; cursor: pointer; width: 100%; font-size: 16px; }
+    form button:hover { background: #e60073; }
+    footer { background: #ff4da6; color: white; text-align: center; padding: 20px; }
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <h1>🌸 Travelin Aja 🌸</h1>
+    <p>Liburan 3 Hari Penuh Pengalaman Tak Terlupakan‼️</p>
+  </header>
+
+  <!-- NAVIGATION -->
+  <nav>
+    <a href="#gallery">Gallery</a>
+    <a href="#testimoni">Testimoni</a>
+    <a href="#destinasi">Destinasi</a>
+    <a href="#contact">Kontak</a>
+    <a href="#booking">Booking</a>
+  </nav>
+
+  <!-- GALLERY -->
+  <section id="gallery">
+    <h2>Kumpulan Gambar</h2>
+    <div class="gallery">
+      <img src="Raja Ampat.jpg" alt="Raja Ampat">
+      <img src="Raja Ampat (2).jpg" alt="Raja Ampat">
+      <img src="Raja Ampat (3).jpg" alt="Raja Ampat">
+      <img src="Raja Ampat (4).jpg" alt="Raja Ampat">
+      <img src="Labuan Bajo.jpg" alt="Labuan Bajo">
+      <img src="Labuan Bajo (2).jpg" alt="Labuan Bajo">
+      <img src="Labuan Bajo (3).jpg" alt="Labuan Bajo">
+      <img src="Labuan Bajo (4).jpg" alt="Labuan Bajo">
+      <img src="Pulau Komodo.jpg" alt="Pulau Komodo">
+      <img src="Pulau Komodo (2).jpg" alt="Pulau Komodo">
+      <img src="Bali.jpg" alt="Bali">
+      <img src="Bali (2).jpg" alt="Bali">
+      <img src="Bali (3).jpg" alt="Bali">
+      <img src="Bali (4).jpg" alt="Bali">
+      <img src="Bromo.jpg" alt="Bromo">
+      <img src="Bromo (2).jpg" alt="Bromo">
+      <img src="Bromo (3).jpg" alt="Bromo">
+      <img src="Bromo (4).jpg" alt="Bromo">
+    </div>
+  </section>
+
+  <!-- TESTIMONI -->
+  <section id="testimoni">
+    <h2>Testimoni Pelanggan</h2>
+    <div class="testimoni">⭐⭐⭐⭐⭐ "Raja Ampat luar biasa! Semua fasilitas sesuai, sangat puas!"</div>
+    <div class="testimoni">⭐⭐⭐⭐ "Labuan Bajo indah sekali, guide ramah dan profesional!"</div>
+    <div class="testimoni">⭐⭐⭐⭐⭐ "Trip ke Bromo seru banget, pasti ikut lagi!"</div>
+    <div class="testimoni">⭐⭐⭐⭐⭐ "Bali selalu memukau! Liburannya nyaman, guide ramah, dan makanannya enak banget!"</div>
+    <div class="testimoni">⭐⭐⭐⭐ "Trip ke Pulau Komodo menyenangkan, pemandangan fantastis dan semua fasilitas lengkap."</div>
+    <div class="testimoni">⭐⭐⭐⭐⭐ "Labuan Bajo luar biasa! Snorkeling dan island hoppingnya top banget!"</div>
+    <div class="testimoni">⭐⭐⭐⭐⭐ "Bromo sunrise experience luar biasa, penginapannya bersih dan nyaman."</div>
+    <div class="testimoni">⭐⭐⭐⭐⭐ "Raja Ampat bener-bener surga dunia, semua itinerary sangat terorganisir."</div>
+    <div class="testimoni">⭐⭐⭐⭐ ⭐ "Tim travel sangat profesional, perjalanan jadi lancar dan seru!"</div>
+    <div class="testimoni">⭐⭐⭐⭐⭐ "Pelayanan memuaskan, cocok banget buat liburan keluarga dan teman-teman."</div>
+  </section>
+
+  <!-- DESTINASI -->
+  <section id="destinasi">
+    <h2>Pilihan Destinasi</h2>
+    <div class="trip-container">
+      <div class="trip">
+        <img src="Raja Ampat (3).jpg" alt="Raja Ampat">
+        <h3>Raja Ampat</h3>
+        <p><b>Harga:</b> Rp 7.500.000</p>
+        <p><b>Fasilitas:</b> Akomodasi tepi pantai, makan & minum, transportasi, tour guide berpengalaman</p>
+      </div>
+      <div class="trip">
+        <img src="Labuan Bajo.jpg" alt="Labuan Bajo">
+        <h3>Labuan Bajo</h3>
+        <p><b>Harga:</b> Rp 4.500.000</p>
+        <p><b>Fasilitas:</b> Akomodasi tepi pantai, makan & minum, transportasi, tour guide berpengalaman</p>
+      </div>
+      <div class="trip">
+        <img src="Pulau Komodo.jpg" alt="Pulau Komodo">
+        <h3>Pulau Komodo</h3>
+        <p><b>Harga:</b> Rp 3.800.000</p>
+        <p><b>Fasilitas:</b> Akomodasi tepi pantai, makan & minum, transportasi, tour guide berpengalaman</p>
+      </div>
+      <div class="trip">
+        <img src="Bali (2).jpg" alt="Bali">
+        <h3>Bali</h3>
+        <p><b>Harga:</b> Rp 2.500.000</p>
+        <p><b>Fasilitas:</b> Akomodasi tepi pantai, makan & minum, transportasi, tour guide berpengalaman</p>
+      </div>
+      <div class="trip">
+        <img src="Bromo (3).jpg" alt="Bromo">
+        <h3>Bromo</h3>
+        <p><b>Harga:</b> Rp 1.200.000</p>
+        <p><b>Fasilitas:</b> Penginapan standar, makan & minum, transportasi, tour guide berpengalaman</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING FORM -->
+  <section id="booking">
+    <h2>Formulir Booking</h2>
+    <form id="bookingForm">
+      <input type="text" name="nama" placeholder="Nama Pemesan" required>
+      <input type="tel" name="telepon" placeholder="No. Telepon" required>
+      <select name="trip" required>
+        <option value="">Pilih Destinasi</option>
+        <option value="Raja Ampat">Raja Ampat</option>
+        <option value="Labuan Bajo">Labuan Bajo</option>
+        <option value="Pulau Komodo">Pulau Komodo</option>
+        <option value="Bali">Bali</option>
+        <option value="Bromo">Bromo</option>
+      </select>
+      <input type="number" name="jumlah" placeholder="Jumlah Orang" required>
+      <select name="metode" required>
+        <option value="Cash">Cash</option>
+        <option value="Transfer">Transfer</option>
+      </select>
+      <input type="file" name="bukti" accept="image/*,application/pdf">
+      <button type="submit">Kirim Booking</button>
+    </form>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact">
+    <h2>Contact Person</h2>
+    <p>📞 0838-2635-3591 (Admin Travel)</p>
+    <p>📧 travelopentrip25@email.com</p>
+  </section>
+
+  <footer>
+    <p>© 2025 Travel Open Trip. All Rights Reserved.</p>
+  </footer>
+
+  <!-- JS Form Handler Tanpa Apps Script -->
+  <script>
+    document.getElementById("bookingForm").addEventListener("submit", function(e) {
+      e.preventDefault();
+      const formData = new FormData(this);
+
+      let data = {};
+      formData.forEach((value, key) => {
+        if (value instanceof File) {
+          data[key] = value.name; // simpan nama file saja
+        } else {
+          data[key] = value;
+        }
+      });
+
+      // Buat CSV sederhana
+      let csvContent = "data:text/csv;charset=utf-8," 
+          + Object.keys(data).join(",") + "\n"
+          + Object.values(data).join(",");
+
+      // Buat link download
+      const encodedUri = encodeURI(csvContent);
+      const link = document.createElement("a");
+      link.setAttribute("href", encodedUri);
+      link.setAttribute("download", "booking.csv");
+      document.body.appendChild(link);
+      link.click();
+      document.body.removeChild(link);
+
+      alert("Booking berhasil! Silakan download file CSV sebagai bukti.");
+      this.reset();
+    });
+  </script>
+
+</body>
+</html>
